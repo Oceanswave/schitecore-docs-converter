@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "convert": "pushd out; pandoc -s managed-cloud-10-paas.md -o managed-cloud-10-paas.docx; popd;",
     "start": "ts-node --files ./src/index.ts",
     "sign-chromium": "sudo codesign --force --deep --sign - ./node_modules/puppeteer/.local-chromium/mac-*/chrome-mac/Chromium.app",
     "eslint": "eslint \"src/**/*.{ts,js}\""
