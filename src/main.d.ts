@@ -1,1 +1,1 @@
-declare module 'joplin-turndown-plugin-gfm';
+declare module "joplin-turndown-plugin-gfm";
