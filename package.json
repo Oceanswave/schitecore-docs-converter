@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "convert": "pushd out; pandoc -s managed-cloud-10-paas.md -o managed-cloud-10-paas.docx; popd;",
+    "convert-sla": "pushd out-sla; pandoc -s managed-cloud-10-paas-sla.md -o managed-cloud-10-paas-sla.docx; popd;",
     "start": "ts-node --files ./src/index.ts",
+    "start-sla": "ts-node --files ./src/sla-pages/index.ts",
     "sign-chromium": "sudo codesign --force --deep --sign - ./node_modules/puppeteer/.local-chromium/mac-*/chrome-mac/Chromium.app",
     "eslint": "eslint \"src/**/*.{ts,js}\""
   },
