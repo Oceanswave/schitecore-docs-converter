@@ -19,3 +19,10 @@ export const managedCloud10PaasSLA: CrawlConfig = {
     "https://support.sitecore.com/kb?id=kb_article_view&sysparm_article=KB0152132",
   ],
 };
+
+export const globalPrivacyGuide: CrawlConfig = {
+  rootUrl:
+    "https://doc.sitecore.com/xp/en/developers/102/platform-administration-and-architecture/global-privacy-guide.html",
+  outputPath: `${process.cwd()}/out-global-privacy-guide/`,
+  filename: "global-privacy-guide.md",
+};

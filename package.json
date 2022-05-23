@@ -6,8 +6,10 @@
   "scripts": {
     "convert": "pushd out; pandoc -s managed-cloud-10-paas.md -o managed-cloud-10-paas.docx; popd;",
     "convert-sla": "pushd out-sla; pandoc -s managed-cloud-10-paas-sla.md -o managed-cloud-10-paas-sla.docx; popd;",
+    "convert-privacy": "pushd out-global-privacy-guide; pandoc -s global-privacy-guide.md -o global-privacy-guide.docx; popd;",
     "start": "ts-node --files ./src/index.ts",
     "start-sla": "ts-node --files ./src/sla-pages/index.ts",
+    "start-privacy": "ts-node --files ./src/global-privacy-guide/index.ts",
     "sign-chromium": "sudo codesign --force --deep --sign - ./node_modules/puppeteer/.local-chromium/mac-*/chrome-mac/Chromium.app",
     "eslint": "eslint \"src/**/*.{ts,js}\""
   },
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
+    "@types/jquery": "^3.5.14",
     "@types/node": "^17.0.16",
     "@types/turndown": "^5.0.1",
     "@typescript-eslint/eslint-plugin": "^5.11.0",
